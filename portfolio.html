@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio – MS Tech Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR (même style, seulement logo) -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo-area" onclick="window.location.href='index.html#hero'" style="cursor:pointer">
+        <img src="ms-logo.jpg" alt="MS Tech Solutions" class="logo-img">
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html#hero">Accueil</a>
+        <a href="offres.html">Offres</a>
+        <a href="methode.html">Méthode</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="apropos.html">À propos</a>
+        <a href="faq.html">FAQ</a>
+        <a href="abonnement.html">Abonnement</a>
+        <a href="contact.html">Contact</a>
+        
+      </nav>
+
+      <a class="nav-cta" href="contact.html">
+        Réserver un appel
+      </a><button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO PORTFOLIO -->
+    <section class="hero hero-portfolio">
+      <div class="container hero-portfolio-inner">
+        <div class="hero-text reveal-up">
+          <p class="hero-kicker">Portfolio · MS Tech Solutions</p>
+          <h1>
+            Nos projets <span class="gradient-text">transforment des idées en résultats.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Quelques exemples de systèmes que nous concevons :
+            sites web futuristes, automatisations intelligentes et optimisation IT pour des entreprises ambitieuses.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">
+              Discuter de mon projet
+            </button>
+            <button class="btn btn-outline" onclick="window.location.href='index.html#services'">
+              Voir nos services
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTE DE PROJETS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title reveal-up">Sélection de projets</h2>
+        <p class="section-subtitle reveal-up">
+          Trois exemples de systèmes que nous construisons pour nos clients : visibilité, automatisation, croissance.
+        </p>
+
+        <!-- PROJET 1 -->
+        <article class="case-card reveal-up">
+          <div class="case-tag">Site web & funnel</div>
+          <h3>RoyalFit Coaching – Écosystème digital complet</h3>
+          <p class="case-meta">Client · Coaching fitness en ligne</p>
+
+          <div class="case-layout">
+            <div class="case-image">
+              <img src="https://images.pexels.com/photos/6456307/pexels-photo-6456307.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                   alt="Mockup du site RoyalFit Coaching réalisé par MS Tech Solutions">
+            </div>
+            <div class="case-content">
+              <p>
+                Création d’un site web futuriste pour un coach sportif en ligne, avec landing page haute
+                conversion, intégration Calendly, tunnel de vente et séquence email post-rendez-vous.
+              </p>
+              <ul>
+                <li>Site responsive, optimisé mobile</li>
+                <li>Landing page orientée conversion</li>
+                <li>Intégration Calendly & automatisation emails</li>
+                <li>Branding moderne et rassurant</li>
+              </ul>
+              <p class="case-result">
+                ✅ Résultats simulés : <strong>+320&nbsp;%</strong> de demandes de rendez-vous en 30 jours.
+              </p>
+              <p class="case-quote">
+                “MS Tech Solutions a structuré tout mon système. Aujourd’hui, mon agenda est rempli chaque semaine.”
+                <br><span class="case-quote-author">— Vanessa, coach </span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJET 2 -->
+        <article class="case-card reveal-up delay-1">
+          <div class="case-tag">Automatisation & IA</div>
+          <h3>BeautyGlow Salon – Assistant IA & rendez-vous automatisés</h3>
+          <p class="case-meta">Client · Salon de beauté</p>
+
+          <div class="case-layout">
+            <div class="case-image">
+              <img src="https://images.pexels.com/photos/3738341/pexels-photo-3738341.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                   alt="Automatisation IA pour BeautyGlow Salon par MS Tech Solutions">
+            </div>
+            <div class="case-content">
+              <p>
+                Mise en place d’un assistant IA pour répondre aux messages des clientes, gérer les demandes courantes
+                et automatiser la prise de rendez-vous via WhatsApp et un calendrier connecté.
+              </p>
+              <ul>
+                <li>Assistant IA pour réponses fréquentes</li>
+                <li>Prise de rendez-vous automatisée 24/7</li>
+                <li>Rappels de rendez-vous par SMS / email</li>
+                <li>Gestion des avis Google facilitée</li>
+              </ul>
+              <p class="case-result">
+                ✅ Résultats simulés : <strong>-40&nbsp;%</strong> de temps passé à répondre aux messages,
+                <strong>+27&nbsp;%</strong> de réservations en 60 jours.
+              </p>
+              <p class="case-quote">
+                “L’IA gère les questions simples et la prise de rendez-vous. On peut enfin se concentrer sur le service.”
+                <br><span class="case-quote-author">— Sarah, propriétaire </span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJET 3 -->
+        <article class="case-card reveal-up delay-2">
+          <div class="case-tag">Site vitrine & optimisation IT</div>
+          <h3>TechNova Repairs – Refonte & performance</h3>
+          <p class="case-meta">Client · Services informatiques</p>
+
+          <div class="case-layout">
+            <div class="case-image">
+              <img src="https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                   alt="Site vitrine TechNova Repairs par MS Tech Solutions">
+            </div>
+            <div class="case-content">
+              <p>
+                Refonte complète du site vitrine d’un service de dépannage informatique, amélioration des performances,
+                intégration d’un formulaire de contact fiable et mise en place de bonnes pratiques IT.
+              </p>
+              <ul>
+                <li>Site vitrine moderne & clair</li>
+                <li>Formulaire de contact optimisé</li>
+                <li>Temps de chargement réduit</li>
+                <li>Recommandations de sécurité de base</li>
+              </ul>
+              <p class="case-result">
+                ✅ Résultats simulés : <strong>×2 de leads</strong> via le formulaire & temps de chargement ramené à
+                <strong> ~1,1&nbsp;s</strong>.
+              </p>
+              <p class="case-quote">
+                “Le site est rapide, lisible, et nous recevons beaucoup plus de demandes de dépannage.”
+                <br><span class="case-quote-author">— Michael, propriétaire </span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="cta-case">
+          <h2>Envie de devenir notre prochain cas d’étude&nbsp;?</h2>
+          <p>
+            Que vous soyez coach, e-commerce local ou entreprise tech, nous concevons un système sur mesure pour votre croissance.
+          </p>
+          <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">
+            Parler de mon projet
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MS Tech Solutions</h3>
+        <p>
+          Nous créons des <strong>systèmes digitaux</strong> qui génèrent des clients,
+          grâce à un design premium, l’automatisation et l’IA.
+        </p>
+
+        <div class="footer-social">
+           <a href="https://www.instagram.com/ms.tech.solutions" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/110137253" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.tiktok.com/@ms.tech.solutions" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.snapchat.com/add/mstech_solution" target="_blank" rel="noopener">Snapchat</a>
+          <a href="https://www.youtube.com/@MS-Tech-Solutions" target="_blank" rel="noopener">YouTube</a>
+        </div>
+</div>
+
+      <div>
+        <h4>Navigation</h4>
+        <a href="offres.html">Offres</a>
+        <a href="methode.html">Méthode</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="faq.html">FAQ</a>
+        <a href="abonnement.html">Abonnement</a>
+        <a href="contact.html">Contact</a>
+        
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>
+          Email :
+          <a href="mailto:mstechsolutions28@gmail.com">mstechsolutions28@gmail.com</a>
+        </p>
+        <p>Zone : Gatineau / Ottawa • Canada & Afrique</p>
+        <p class="muted">Réponse sous 24–48h ouvrables.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> MS Tech Solutions — Nous transformons une idée en empire.
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa data-wa-msg="Salut MS Tech Solutions 👋 Je veux un audit gratuit. Voici mon activité : ">WhatsApp</a>
+  <script src="script.js"></script>
+</body>
+</html>

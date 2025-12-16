@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – MS Tech Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contactez MS Tech Solutions pour un audit gratuit et un plan d'action clair." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Calendly inline widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <meta name="theme-color" content="#020617" />
+  <meta property="og:title" content="MS Tech Solutions – Systèmes digitaux qui génèrent des clients" />
+  <meta property="og:description" content="Nous créons des sites et automatisations orientés résultats, que vous ayez déjà un site ou non." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="ms-logo.png" />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+<header class="navbar">
+    <div class="container nav-content">
+      <div class="logo-area" onclick="window.location.href='index.html'" style="cursor:pointer">
+        <img src="ms-logo.jpg" alt="MS Tech Solutions" class="logo-img">
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="offres.html">Offres</a>
+        <a href="methode.html">Méthode</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="apropos.html">À propos</a>
+        <a href="faq.html">FAQ</a>
+        <a href="abonnement.html">Abonnement</a>
+        <a href="contact.html">Contact</a>
+        
+      </nav>
+
+      <a class="nav-cta" href="contact.html">Réserver un appel</a>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge">Contact • Audit gratuit</span>
+        <h1>Parlons de ton projet</h1>
+        <p class="lead">
+          Dis-nous où tu en es (avec site / sans site) et on te propose un plan clair.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="reveal-up">
+          <h2 class="section-title align-left">Réserver un appel</h2>
+          <p class="section-subtitle align-left">
+            Appel découverte 15–30 min : recommandations concrètes et prochaines étapes.
+          </p>
+
+          <ul class="contact-highlights">
+            <li>📌 Audit gratuit (situation + objectifs)</li>
+            <li>🧠 Plan d’action 30 jours</li>
+            <li>🚀 Offre adaptée (Starter / Business / Empire)</li>
+          </ul>
+
+          <div class="calendly-wrapper">
+            <div class="calendly-inline-widget"
+                 data-url="https://calendly.com/mstechsolutions28/30min"
+                 style="min-width:320px;height:630px;">
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="contact-form reveal-up delay-1"
+          action="https://formspree.io/f/xyzrprbn"
+          method="POST"
+          id="contact-form"
+        >
+          <input type="hidden" name="_language" value="fr">
+          <!-- IMPORTANT : remplace ce lien par ton vrai domaine quand tu publies -->
+          <input type="hidden" name="_redirect" value="merci.html">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input id="name" name="Nom complet" type="text" required placeholder="Votre nom" minlength="2">
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input id="email" name="Email" type="email" required placeholder="vous@email.com" />
+              <small class="error"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="project-type">Votre situation</label>
+              <select id="project-type" name="Situation" required>
+                <option value="" disabled selected>Choisir…</option>
+                <option>Je n’ai pas de site</option>
+                <option>J’ai un site mais il ne rapporte rien</option>
+                <option>Je veux automatiser / scaler</option>
+              </select>
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget estimé</label>
+              <select id="budget" name="Budget estimé" required>
+                                <option value="" disabled selected>Choisir…</option>
+                <option value="moins_1000">Moins de 1 000 $</option>
+                <option value="starter">Environ 799 $ (Starter)</option>
+                <option value="business">1 000 $ – 2 000 $ (Business)</option>
+                <option value="empire">3 000 $+ (Empire / sur mesure)</option>
+                <option value="abonnement">149 $ / mois (Abonnement)</option>
+                <option value="incertain">Je ne sais pas encore</option>
+              </select>
+              <small class="error"></small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Décrivez votre projet</label>
+            <textarea id="message" name="Message" rows="6" required placeholder="Votre objectif, votre activité, et ce que vous souhaitez améliorer…" minlength="10"></textarea>
+              <small class="error"></small>
+            </div>
+
+          <button class="btn btn-primary w-full" type="submit">
+            Envoyer la demande
+          </button>
+
+          <p class="form-note">
+            Ou écrivez-nous directement :
+            <a href="mailto:mstechsolutions28@gmail.com">mstechsolutions28@gmail.com</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MS Tech Solutions</h3>
+        <p>
+          Nous créons des <strong>systèmes digitaux</strong> qui génèrent des clients,
+          grâce à un design premium, l’automatisation et l’IA.
+        </p>
+
+        <div class="footer-social">
+           <a href="https://www.instagram.com/ms.tech.solutions" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/110137253" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.tiktok.com/@ms.tech.solutions" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.snapchat.com/add/mstech_solution" target="_blank" rel="noopener">Snapchat</a>
+          <a href="https://www.youtube.com/@MS-Tech-Solutions" target="_blank" rel="noopener">YouTube</a>
+        </div>
+</div>
+
+      <div>
+        <h4>Navigation</h4>
+        <a href="offres.html">Offres</a>
+        <a href="methode.html">Méthode</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="faq.html">FAQ</a>
+        <a href="abonnement.html">Abonnement</a>
+        <a href="contact.html">Contact</a>
+        
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>
+          Email :
+          <a href="mailto:mstechsolutions28@gmail.com">mstechsolutions28@gmail.com</a>
+        </p>
+        <p>Zone : Gatineau / Ottawa • Canada & Afrique</p>
+        <p class="muted">Réponse sous 24–48h ouvrables.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> MS Tech Solutions — Nous transformons une idée en empire.
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa data-wa-msg="Salut MS Tech Solutions 👋 Je veux un audit gratuit. Voici mon activité : ">WhatsApp</a>
+  <script src="script.js"></script>
+</body>
+</html>
